@@ -13,7 +13,36 @@
 		5A20359E29D6EF4300E732E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20359C29D6EF4300E732E6 /* LaunchScreen.storyboard */; };
 		5A2035AA29D6F16600E732E6 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2035A929D6F16600E732E6 /* HomeViewController.storyboard */; };
 		5A2035AC29D6F29E00E732E6 /* CheckBoxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2035AB29D6F29E00E732E6 /* CheckBoxer.swift */; };
+		5AD23E9E29DFCFAD00C4800D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD23E9D29DFCFAC00C4800D /* UserNotifications.framework */; };
+		5AD23EA029DFCFAD00C4800D /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD23E9F29DFCFAD00C4800D /* UserNotificationsUI.framework */; };
+		5AD23EA329DFCFAD00C4800D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD23EA229DFCFAD00C4800D /* NotificationViewController.swift */; };
+		5AD23EA629DFCFAD00C4800D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD23EA429DFCFAD00C4800D /* MainInterface.storyboard */; };
+		5AD23EAA29DFCFAD00C4800D /* CustomNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5AD23E9B29DFCFAC00C4800D /* CustomNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AD23EA829DFCFAD00C4800D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A20358629D6EF3E00E732E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AD23E9A29DFCFAC00C4800D;
+			remoteInfo = CustomNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AD23EAE29DFCFAD00C4800D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AD23EAA29DFCFAD00C4800D /* CustomNotification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A20358E29D6EF3E00E732E6 /* CheckBoxer-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CheckBoxer-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +53,14 @@
 		5A20359F29D6EF4300E732E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A2035A929D6F16600E732E6 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		5A2035AB29D6F29E00E732E6 /* CheckBoxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxer.swift; sourceTree = "<group>"; };
+		5AD23E9629DFCF7700C4800D /* CheckBoxer-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CheckBoxer-Example.entitlements"; sourceTree = "<group>"; };
+		5AD23E9B29DFCFAC00C4800D /* CustomNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD23E9D29DFCFAC00C4800D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		5AD23E9F29DFCFAD00C4800D /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		5AD23EA229DFCFAD00C4800D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		5AD23EA529DFCFAD00C4800D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5AD23EA729DFCFAD00C4800D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD23EAF29DFD1A800C4800D /* CustomNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomNotification.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AD23E9829DFCFAC00C4800D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD23EA029DFCFAD00C4800D /* UserNotificationsUI.framework in Frameworks */,
+				5AD23E9E29DFCFAD00C4800D /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				5A20359029D6EF3E00E732E6 /* CheckBoxer-Example */,
+				5AD23EA129DFCFAD00C4800D /* CustomNotification */,
+				5AD23E9C29DFCFAC00C4800D /* Frameworks */,
 				5A20358F29D6EF3E00E732E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				5A20358E29D6EF3E00E732E6 /* CheckBoxer-Example.app */,
+				5AD23E9B29DFCFAC00C4800D /* CustomNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +105,7 @@
 		5A20359029D6EF3E00E732E6 /* CheckBoxer-Example */ = {
 			isa = PBXGroup;
 			children = (
+				5AD23E9629DFCF7700C4800D /* CheckBoxer-Example.entitlements */,
 				5A2035A829D6F12500E732E6 /* Storyboard */,
 				5A2035A629D6F0F200E732E6 /* AppDelegate */,
 				5A2035A729D6F11100E732E6 /* HomeViewController */,
@@ -99,6 +149,26 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		5AD23E9C29DFCFAC00C4800D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AD23E9D29DFCFAC00C4800D /* UserNotifications.framework */,
+				5AD23E9F29DFCFAD00C4800D /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AD23EA129DFCFAD00C4800D /* CustomNotification */ = {
+			isa = PBXGroup;
+			children = (
+				5AD23EAF29DFD1A800C4800D /* CustomNotification.entitlements */,
+				5AD23EA229DFCFAD00C4800D /* NotificationViewController.swift */,
+				5AD23EA429DFCFAD00C4800D /* MainInterface.storyboard */,
+				5AD23EA729DFCFAD00C4800D /* Info.plist */,
+			);
+			path = CustomNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,15 +179,34 @@
 				5A20358A29D6EF3E00E732E6 /* Sources */,
 				5A20358B29D6EF3E00E732E6 /* Frameworks */,
 				5A20358C29D6EF3E00E732E6 /* Resources */,
+				5AD23EAE29DFCFAD00C4800D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5AD23EA929DFCFAD00C4800D /* PBXTargetDependency */,
 			);
 			name = "CheckBoxer-Example";
 			productName = "CheckBoxer-Example";
 			productReference = 5A20358E29D6EF3E00E732E6 /* CheckBoxer-Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5AD23E9A29DFCFAC00C4800D /* CustomNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD23EAB29DFCFAD00C4800D /* Build configuration list for PBXNativeTarget "CustomNotification" */;
+			buildPhases = (
+				5AD23E9729DFCFAC00C4800D /* Sources */,
+				5AD23E9829DFCFAC00C4800D /* Frameworks */,
+				5AD23E9929DFCFAC00C4800D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomNotification;
+			productName = CustomNotification;
+			productReference = 5AD23E9B29DFCFAC00C4800D /* CustomNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +219,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					5A20358D29D6EF3E00E732E6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5AD23E9A29DFCFAC00C4800D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -148,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				5A20358D29D6EF3E00E732E6 /* CheckBoxer-Example */,
+				5AD23E9A29DFCFAC00C4800D /* CustomNotification */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +253,14 @@
 				5A20359E29D6EF4300E732E6 /* LaunchScreen.storyboard in Resources */,
 				5A20359B29D6EF4300E732E6 /* Assets.xcassets in Resources */,
 				5A2035AA29D6F16600E732E6 /* HomeViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AD23E9929DFCFAC00C4800D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD23EA629DFCFAD00C4800D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +277,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AD23E9729DFCFAC00C4800D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD23EA329DFCFAD00C4800D /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AD23EA929DFCFAD00C4800D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AD23E9A29DFCFAC00C4800D /* CustomNotification */;
+			targetProxy = 5AD23EA829DFCFAD00C4800D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A20359C29D6EF4300E732E6 /* LaunchScreen.storyboard */ = {
@@ -185,6 +302,14 @@
 				5A20359D29D6EF4300E732E6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5AD23EA429DFCFAD00C4800D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AD23EA529DFCFAD00C4800D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,11 +432,14 @@
 		5A2035A329D6EF4300E732E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = "CheckBoxer-Example/CheckBoxer-Example.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CheckBoxer-Example/Global/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -324,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution-Pvt-Ltd.CheckBoxer-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -336,11 +464,14 @@
 		5A2035A429D6EF4300E732E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = "CheckBoxer-Example/CheckBoxer-Example.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CheckBoxer-Example/Global/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -353,9 +484,65 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution-Pvt-Ltd.CheckBoxer-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AD23EAC29DFCFAD00C4800D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CustomNotification/CustomNotification.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.test.notification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AD23EAD29DFCFAD00C4800D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CustomNotification/CustomNotification.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CWF679Z8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sparkout.test.notification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +566,15 @@
 			buildConfigurations = (
 				5A2035A329D6EF4300E732E6 /* Debug */,
 				5A2035A429D6EF4300E732E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AD23EAB29DFCFAD00C4800D /* Build configuration list for PBXNativeTarget "CustomNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AD23EAC29DFCFAD00C4800D /* Debug */,
+				5AD23EAD29DFCFAD00C4800D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

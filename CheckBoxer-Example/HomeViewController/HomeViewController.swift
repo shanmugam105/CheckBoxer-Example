@@ -16,6 +16,11 @@ class HomeViewController: UIViewController {
         checkBox.selectedIcon = #imageLiteral(resourceName: "radiobutton_selected")
         checkBox.unselectedIcon = #imageLiteral(resourceName: "radiobutton_unselected")
         checkBox.allItems = [.init(title: "Apple", isSelected: true),
+                             .init(title: "Android", isSelected: true),
+                             .init(title: "Android", isSelected: true),
+                             .init(title: "Android", isSelected: false),
+                             .init(title: "Android", isSelected: false),
+                             .init(title: "Android", isSelected: false),
                              .init(title: "Android", isSelected: false),
                              .init(title: "BB", isSelected: false)]
     }
